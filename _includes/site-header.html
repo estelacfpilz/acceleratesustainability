@@ -1,46 +1,43 @@
 
-<header class="grid-middle">
-    <div class="col-5">
-      <a href="/" class="logo"> LOGO </a>
-    </div> 
-    <nav class="col-7 hide-sm right">
+<!-- Include inside the header of each page - Remember to add the class grid to that parent container -->
+<div class="col-5">
+  <a href="/" class="logo"> Accelerate Sustainability </a>
+</div> 
 
-      
-      <a href="/blog-archive"> Archive </a>
+<nav class="col-7 hide-sm right">
 
-      <div class="dropdown">
-        <a href="/blog" class="dropdown-title"> Blog </a>
-        <div class="dropdown-content">
-
-          {% for archive in site.archives limit:8 %}
-            <a href="{{archive.url}}" class="tag"> {{archive.category}}</a>
-          {% endfor %}
-
-        </div> 
-      </div>
-        <a href="#"> Portfolio </a>
-        <a href="#"> Contact </a>
-      
-    </nav> 
-    <div class="col-7 right show-sm">
-      <a class="hamburger-button"> &#9776; </a>
-    </div>
-  </header>
   
-  <div class="mobile-menu"> 
-    <nav> 
-      <a href="/blog"> Blog </a>
-      <a href="/blog-archive"> Link Two </a>
-      <a href="#"> Link Three </a>
-      <a href="#"> Link Four </a>
-    </nav>
-  </div> 
+  <a href="/blog-archive">  </a>
 
+  <div class="dropdown">
+    <a href="/blog" class="dropdown-title"> Resources </a>
+    <div class="dropdown-content">
+      <a href="#"> for my leisure time </a>
+      <a href="#"> for my study time </a>
+      <a href="#"> for my work </a>
+    </div> 
+  </div>
+    <a href="#"> Contribute </a>
+    <a href="#"> About us </a>
+  
+</nav> 
 
+<!-- Hamburger symbol -->
+<div class="col-7 right show-sm">
+  <a class="hamburger-button"> &#9776; </a>
+</div>
 
-<!-- 
-  {% for link in site.archives %}
-              <a href="{{link.url}}"> {{ link.category | capitalize }} </a>
-          {% endfor %}
+<!-- Mobile Menu -->
 
---> 
+<div class="mobile-menu"> 
+<nav> 
+  <div>
+    <span>Resources</span>
+    <a href="#"> for my leisure time </a>
+    <a href="#"> for my study time </a>
+    <a href="#"> for my work </a>
+  </div>
+  <a href="#"> Contribute </a>
+  <a href="#"> About us </a>
+</nav>
+</div> 

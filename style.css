@@ -99,9 +99,9 @@ section { position: relative; }
 
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
+.bg-darkfeatured { background-color: var(--dark-featured);}
 .bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
-.bg-v-light  { background-color: var(--v-light); }
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -162,7 +162,7 @@ a.bg-image { display: block;}
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
+  font-family: 'Lexend Deca', sans-serif;   
   color: var(--dark-text);
 }
 
@@ -180,7 +180,7 @@ h6 { font-size: 1.2rem; }
 p, li {
   line-height: 1.4; 
   margin-bottom: 1rem;
-  font-family: 'Martel', serif; 
+  font-family: 'Lexend Deca', sans-serif;  
   font-weight: 200;
   font-size: 1rem;
 }
@@ -196,8 +196,8 @@ p:last-child {
 
 /* Unique Typography Styles  */
 .emphasis       { font-size: 1.2rem; }
-.text-featured  { color: var(--featured-text);}
-.text-light     { color: var(--light-text);}
+.text-featured  { color: var(--featured);}
+.text-light     { color: var(--light);}
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
 
@@ -338,8 +338,18 @@ nav a:hover {
   }
 
 
+  /* ------------ Footer  ----------------------- */
+.footer-nav a {
+  display: block;
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+}
 
-/* ------------ Contact Forms  ----------------------- */
+
+ 
+  /* ------------ Contact Forms  ----------------------- */
 
 
 
