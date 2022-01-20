@@ -15,11 +15,7 @@ systems_image: /images/systems.jpg
 ---
 
 <header class="grid tall-80 bg-image bg-overlay bg-overlay-80 text-light" 
-style="background-image: url('{{page.background_image}}');
-@media(max-width:64em) {
-    background-image: none;
-    background-color: var(--dark-featured);
-}">
+style="background-image: url('{{page.background_image}}');">
     {% include site-header.html %}
     <h1 class="col-8 editable">
         Curated resources for the <span class="text-bold-featured">sustainability curious</span>
@@ -27,7 +23,11 @@ style="background-image: url('{{page.background_image}}');
 </header>
 
 <!---------------- Quote -------------------->
-<section class="grid padded bg-image bg-overlay-color text-light" style="background-image: url('{{page.banner_image}}');">
+<section class="grid padded bg-image bg-overlay-color text-light" 
+style="background-image: url('{{page.banner_image}}');
+@media(max-width:64em) {
+    background-image: none;
+    background-color: var(--dark-featured);}">
     <div class="col-8_sm-12">
         <p>“The question of reaching sustainability is not about if we will have enough energy, enough food,  or other tangible resources - those we have. The question is: will there be enough leaders in time?”</p>
         <p class="subtle">Dr. Göran Broman and Dr. Karl-Henrik Robèrt </p>
