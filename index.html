@@ -14,7 +14,12 @@ idea_image: ./images/idea.jpg
 systems_image: /images/systems.jpg
 ---
 
-<header class="grid tall-80 bg-image bg-overlay bg-overlay-80 text-light" style="background-image: url('{{page.background_image}}');">
+<header class="grid tall-80 bg-image bg-overlay bg-overlay-80 text-light" 
+style="background-image: url('{{page.background_image}}');
+@media(max-width:64em) {
+    background-image: none;
+    background-color: var(--dark-featured);
+}">
     {% include site-header.html %}
     <h1 class="col-8 editable">
         Curated resources for the <span class="text-bold-featured">sustainability curious</span>
@@ -51,7 +56,7 @@ systems_image: /images/systems.jpg
 
 <!---------------- Mindset -------------------->
 <section class="bg-light">
-    <div class="grid-middle">
+    <div class="grid-middle flex-flip-alternate">
         <div class="col-6_sm-12 padded">
             <h3 class="editable">
                 What if
@@ -66,7 +71,7 @@ systems_image: /images/systems.jpg
         <div class="col-6_sm-12 padded bg-image tall-50" style="background-image: url('{{page.idea_image}}');"></div>
     </div>
 
-    <div class="grid-middle flex-flip-alternate">
+    <div class="grid-middle">
         <div class="col-6_sm-12 padded bg-image tall-50" style="background-image: url('{{page.systems_image}}');"></div>
         <div class="col-6_sm-12 padded">
             <h3 class="editable">
