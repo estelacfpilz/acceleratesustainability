@@ -15,5 +15,5 @@ design:
   medium_color: 'rgb(90,90,95)'
   light_color: '#F6F3F1'
   featured_color: '#F4A261'
-  bold-featured-_color: '#EC622B'
+  bold-featured_color: '#EC622B'
   dark-featured_color: '#1D5055'
