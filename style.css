@@ -219,6 +219,8 @@ p:last-child {
 .text-light     { color: var(--light);}
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
+.text-big       { font-size: 3.5rem;}
+.text-thin      { font-weight: 200;}
 
 
 /* ------------ Buttons & Links ------------ */
@@ -329,7 +331,7 @@ nav a:hover {
     line-height: 0.8;
     position: fixed;
     right: 5%;
-    top: 0rem;
+    top: 1rem;
     z-index: 4;
   }
   
@@ -414,6 +416,10 @@ form button:hover {
 }
 
 /* ------------ Home page elements ----------------------- */
+
+.bg-banner-quote {
+  background-image: url(./images/banner-change-blue.png);
+}
 
 .card-homepage {
   text-decoration: none;
@@ -568,7 +574,14 @@ hr.short.center {
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
 
-  .flex-flip-alternate {flex-direction: column-reverse;}
+  .bg-banner-quote { 
+    background-image: none;
+    background-color: var(--dark-featured);
+  }
+
+  .flex-flip-alternate {
+    flex-direction: column-reverse;
+  }
 
 }
 
