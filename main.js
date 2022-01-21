@@ -8,3 +8,13 @@ $('.hamburger-button').click(function(){
 $('.accordion-title').click(function(){
     $(this).toggleClass('accordion-active');
 })
+
+
+// ----------- Typing Animation
+var typed = new Typed('#typed', {
+	stringsElement: '#typed-strings',
+  typeSpeed: 100,
+  backSpeed: 5,
+  backDelay: 1000,
+  loop: false,
+});
